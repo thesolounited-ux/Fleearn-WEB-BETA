@@ -15,31 +15,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      // GitHub Pages subdirectory trailing-slash normalization
+      (function () {
+        var loc = window.location;
+        if (loc.hostname.endsWith('github.io')) {
+          var parts = loc.pathname.split('/').filter(Boolean);
+          if (parts.length === 1 && !loc.pathname.endsWith('/') && !loc.pathname.includes('.')) {
+            loc.replace(loc.protocol + '//' + loc.host + loc.pathname + '/' + loc.search + loc.hash);
+          }
+        }
+      })();
+    </script>
+    <!-- STATIC_PROD_START -->
+    <link rel="stylesheet" crossorigin href="./assets/index.css">
+    <!-- STATIC_PROD_END -->
   </head>
   <body class="bg-slate-950 text-slate-100 antialiased selection:bg-[#054541] selection:text-white transition-colors duration-200">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script>
-      // Fallback for static GitHub Pages root deployment where .tsx cannot be compiled on-the-fly
-      (function () {
-        setTimeout(function () {
-          var root = document.getElementById('root');
-          if (root && root.children.length === 0) {
-            console.warn('Vite dev server not detected. Loading static production bundle for GitHub Pages root hosting...');
-            var link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.href = './assets/index-KAXRFHmA.css';
-            document.head.appendChild(link);
-
-            var script = document.createElement('script');
-            script.type = 'module';
-            script.crossOrigin = 'anonymous';
-            script.src = './assets/index-DCQddnYT.js';
-            document.body.appendChild(script);
-          }
-        }, 350);
-      })();
-    </script>
+    <!-- STATIC_PROD_START -->
+    <script type="module" crossorigin src="./assets/index.js"></script>
+    <!-- STATIC_PROD_END -->
+    <!-- VITE_DEV_ENTRY -->
   </body>
 </html>
 

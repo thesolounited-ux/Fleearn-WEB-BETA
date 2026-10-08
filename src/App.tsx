@@ -88,7 +88,20 @@ const MainContent: React.FC = () => {
 
       {/* Main Page Routing */}
       <main className="flex-1">
-        {currentRoute === 'home' && (
+        {(![
+          'download',
+          'notices',
+          'faq',
+          'about',
+          'contact',
+          'support',
+          'status',
+          'features',
+          'how-it-works',
+          'legal-privacy',
+          'legal-terms',
+          'legal-cookie',
+        ].includes(currentRoute)) && (
           <>
             <HeroSection />
             <LatestNoticesSection />
