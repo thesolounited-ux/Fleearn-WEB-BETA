@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "vite build",
+    "build": "vite build && cp -r dist/assets . && cp public/404.html . 2>/dev/null || true",
     "start": "NODE_ENV=production tsx server.ts",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit"

@@ -19,6 +19,27 @@
   <body class="bg-slate-950 text-slate-100 antialiased selection:bg-[#054541] selection:text-white transition-colors duration-200">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Fallback for static GitHub Pages root deployment where .tsx cannot be compiled on-the-fly
+      (function () {
+        setTimeout(function () {
+          var root = document.getElementById('root');
+          if (root && root.children.length === 0) {
+            console.warn('Vite dev server not detected. Loading static production bundle for GitHub Pages root hosting...');
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = './assets/index-KAXRFHmA.css';
+            document.head.appendChild(link);
+
+            var script = document.createElement('script');
+            script.type = 'module';
+            script.crossOrigin = 'anonymous';
+            script.src = './assets/index-DCQddnYT.js';
+            document.body.appendChild(script);
+          }
+        }, 350);
+      })();
+    </script>
   </body>
 </html>
 
