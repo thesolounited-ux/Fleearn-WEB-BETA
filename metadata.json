@@ -1,0 +1,6 @@
+{
+  "name": "Fleearn Bangladesh Ltd - Official Corporate & App Website",
+  "description": "Official corporate website and app distribution platform for Fleearn Bangladesh Ltd, featuring app downloads, announcements, notices, support deep links, and administrative controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

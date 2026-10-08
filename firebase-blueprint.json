@@ -1,0 +1,211 @@
+{
+  "entities": {
+    "Admin": {
+      "title": "Admin",
+      "description": "Authorized administrator record",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "email": { "type": "string", "format": "email", "maxLength": 256 },
+        "name": { "type": "string", "maxLength": 128 },
+        "role": { "type": "string", "enum": ["superadmin", "admin"] },
+        "isActive": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "lastLogin": { "type": "string" }
+      },
+      "required": ["uid", "email", "name", "role", "isActive"]
+    },
+    "AppVersion": {
+      "title": "AppVersion",
+      "description": "Fleearn mobile app release build",
+      "type": "object",
+      "properties": {
+        "appName": { "type": "string", "maxLength": 100 },
+        "versionNumber": { "type": "string", "maxLength": 30 },
+        "description": { "type": "string", "maxLength": 3000 },
+        "releaseDate": { "type": "string", "maxLength": 20 },
+        "minAndroidVersion": { "type": "string", "maxLength": 50 },
+        "whatsNew": { "type": "string", "maxLength": 4000 },
+        "screenshots": { "type": "array", "description": "Array of 2 to 7 screenshot URLs" },
+        "downloadMethod": { "type": "string", "enum": ["upload", "external"] },
+        "apkFileUrl": { "type": "string", "maxLength": 500 },
+        "apkFileName": { "type": "string", "maxLength": 200 },
+        "apkFileSize": { "type": "string", "maxLength": 50 },
+        "externalDownloadUrl": { "type": "string", "maxLength": 1000 },
+        "isPublic": { "type": "boolean" },
+        "isLatest": { "type": "boolean" },
+        "isMandatory": { "type": "boolean" },
+        "actualDownloads": { "type": "number" },
+        "logoUrl": { "type": "string", "maxLength": 500 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["appName", "versionNumber", "isPublic", "isLatest", "isMandatory", "downloadMethod"]
+    },
+    "Notice": {
+      "title": "Notice",
+      "description": "Official company notice and announcement",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 300 },
+        "description": { "type": "string", "maxLength": 10000 },
+        "mediaType": { "type": "string", "enum": ["none", "image", "video", "pdf"] },
+        "mediaUrl": { "type": "string", "maxLength": 1000 },
+        "mediaFileName": { "type": "string", "maxLength": 200 },
+        "publishDate": { "type": "string", "maxLength": 20 },
+        "isImportant": { "type": "boolean" },
+        "isVisible": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["title", "description", "publishDate", "isImportant", "isVisible"]
+    },
+    "FaqItem": {
+      "title": "FaqItem",
+      "description": "Frequently asked question item",
+      "type": "object",
+      "properties": {
+        "question": { "type": "string", "maxLength": 500 },
+        "answer": { "type": "string", "maxLength": 5000 },
+        "category": { "type": "string", "maxLength": 100 },
+        "order": { "type": "number" },
+        "isPublished": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["question", "answer", "isPublished", "order"]
+    },
+    "FeatureItem": {
+      "title": "FeatureItem",
+      "description": "Fleearn core application feature showcase",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 200 },
+        "description": { "type": "string", "maxLength": 1000 },
+        "iconName": { "type": "string", "maxLength": 50 },
+        "order": { "type": "number" },
+        "isVisible": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["title", "description", "iconName", "order", "isVisible"]
+    },
+    "HowItWorksStep": {
+      "title": "HowItWorksStep",
+      "description": "Step explaining app workflow",
+      "type": "object",
+      "properties": {
+        "stepNumber": { "type": "number" },
+        "title": { "type": "string", "maxLength": 200 },
+        "description": { "type": "string", "maxLength": 1000 },
+        "iconName": { "type": "string", "maxLength": 50 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["stepNumber", "title", "description", "iconName"]
+    },
+    "AnnouncementBanner": {
+      "title": "AnnouncementBanner",
+      "description": "Website-wide urgent notification banner",
+      "type": "object",
+      "properties": {
+        "text": { "type": "string", "maxLength": 500 },
+        "linkText": { "type": "string", "maxLength": 100 },
+        "linkUrl": { "type": "string", "maxLength": 500 },
+        "priority": { "type": "string", "enum": ["low", "normal", "high", "urgent"] },
+        "isActive": { "type": "boolean" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["text", "priority", "isActive"]
+    },
+    "ServiceStatus": {
+      "title": "ServiceStatus",
+      "description": "Service health and operational status indicator",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "maxLength": 100 },
+        "status": { "type": "string", "enum": ["operational", "partial", "outage"] },
+        "description": { "type": "string", "maxLength": 300 },
+        "lastChecked": { "type": "string" }
+      },
+      "required": ["name", "status", "description"]
+    },
+    "WebsiteSettings": {
+      "title": "WebsiteSettings",
+      "description": "System-wide corporate settings and metadata",
+      "type": "object",
+      "properties": {
+        "websiteName": { "type": "string", "maxLength": 150 },
+        "tagline": { "type": "string", "maxLength": 300 },
+        "primaryDomain": { "type": "string", "maxLength": 300 },
+        "defaultLanguage": { "type": "string", "enum": ["bn", "en"] },
+        "maintenanceMode": { "type": "boolean" },
+        "maintenanceMessage": { "type": "string", "maxLength": 1000 },
+        "demoViewsEnabled": { "type": "boolean" },
+        "demoViewsCount": { "type": "number" },
+        "demoViewsRangeMin": { "type": "number" },
+        "demoViewsRangeMax": { "type": "number" },
+        "androidPackageName": { "type": "string", "maxLength": 100 },
+        "androidSha256Fingerprint": { "type": "string", "maxLength": 200 },
+        "supportDeepLinkDestination": { "type": "string", "maxLength": 200 }
+      },
+      "required": ["websiteName", "defaultLanguage", "maintenanceMode"]
+    },
+    "ActivityLog": {
+      "title": "ActivityLog",
+      "description": "Audit record of administrative action",
+      "type": "object",
+      "properties": {
+        "adminUid": { "type": "string", "maxLength": 128 },
+        "adminEmail": { "type": "string", "maxLength": 256 },
+        "action": { "type": "string", "maxLength": 150 },
+        "resource": { "type": "string", "maxLength": 150 },
+        "details": { "type": "string", "maxLength": 2000 },
+        "timestamp": { "type": "string" }
+      },
+      "required": ["adminUid", "adminEmail", "action", "resource", "details", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/admins/{adminId}": {
+      "schema": { "$ref": "#/entities/Admin" },
+      "description": "Authorized administrators with elevated administrative permissions"
+    },
+    "/appVersions/{versionId}": {
+      "schema": { "$ref": "#/entities/AppVersion" },
+      "description": "Published and archived Fleearn APK versions and release notes"
+    },
+    "/notices/{noticeId}": {
+      "schema": { "$ref": "#/entities/Notice" },
+      "description": "Official company announcements and notices"
+    },
+    "/faqs/{faqId}": {
+      "schema": { "$ref": "#/entities/FaqItem" },
+      "description": "Frequently asked questions and answers"
+    },
+    "/features/{featureId}": {
+      "schema": { "$ref": "#/entities/FeatureItem" },
+      "description": "Core features of the Fleearn platform"
+    },
+    "/howItWorks/{stepId}": {
+      "schema": { "$ref": "#/entities/HowItWorksStep" },
+      "description": "Workflow steps explaining how Fleearn operates"
+    },
+    "/settings/config": {
+      "schema": { "$ref": "#/entities/WebsiteSettings" },
+      "description": "Global website configuration, theme defaults, and deep links"
+    },
+    "/settings/banner": {
+      "schema": { "$ref": "#/entities/AnnouncementBanner" },
+      "description": "Active website announcement banner"
+    },
+    "/serviceStatuses/{statusId}": {
+      "schema": { "$ref": "#/entities/ServiceStatus" },
+      "description": "Cloud service and distribution infrastructure operational statuses"
+    },
+    "/activityLogs/{logId}": {
+      "schema": { "$ref": "#/entities/ActivityLog" },
+      "description": "Auditable log of administrative changes"
+    }
+  }
+}

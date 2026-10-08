@@ -1,0 +1,417 @@
+{
+  "admins": [
+    {
+      "id": "adm_01",
+      "uid": "FL-ADM-101",
+      "name": "Chief Systems Administrator",
+      "email": "admin1@fleearn.com",
+      "role": "superadmin",
+      "isActive": true,
+      "passwordHash": "3e0e359450e4a14559d3ef361e4e5accccdf7bb86e52ff4e32820be960e7ea9bf0d664040df1f77848389410dd2ed3a4e30fd06147c4f90981462868ec1d9675",
+      "salt": "fleearn_enterprise_secure_salt_2026",
+      "lastLogin": "2026-10-08T15:02:16.679Z",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "adm_02",
+      "uid": "FL-ADM-102",
+      "name": "Operations Director",
+      "email": "admin2@fleearn.com",
+      "role": "admin",
+      "isActive": true,
+      "passwordHash": "3e0e359450e4a14559d3ef361e4e5accccdf7bb86e52ff4e32820be960e7ea9bf0d664040df1f77848389410dd2ed3a4e30fd06147c4f90981462868ec1d9675",
+      "salt": "fleearn_enterprise_secure_salt_2026",
+      "lastLogin": "2026-10-08T15:02:09.387Z",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "adm_03",
+      "uid": "FL-ADM-103",
+      "name": "Security & Compliance Lead",
+      "email": "admin3@fleearn.com",
+      "role": "admin",
+      "isActive": true,
+      "passwordHash": "3e0e359450e4a14559d3ef361e4e5accccdf7bb86e52ff4e32820be960e7ea9bf0d664040df1f77848389410dd2ed3a4e30fd06147c4f90981462868ec1d9675",
+      "salt": "fleearn_enterprise_secure_salt_2026",
+      "lastLogin": "2026-10-08T15:02:09.387Z",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "appVersions": [
+    {
+      "id": "ver_200",
+      "appName": "Fleearn",
+      "versionNumber": "2.0.0",
+      "description": "Fleearn অফিসিয়াল রিলিজ ২.০.০। নতুন UI ডিজাইন, উন্নত পারফরম্যান্স, আল্ট্রা-ফাস্ট উইথড্রয়াল এবং উন্নত সিকিউরিটি আপডেট।",
+      "releaseDate": "2026-09-28",
+      "minAndroidVersion": "Android 8.0 (Oreo) বা পরবর্তী",
+      "whatsNew": "• সম্পূর্ণ নতুন রিফ্রেশড ডার্ক ও লাইট থিম ইন্টারফেস\n• বিদ্যুৎ গতিতে নোটিফিকেশন ডেলিভারি\n• উন্নত রেফারেল ড্যাশবোর্ড ও ট্র্যাকিং\n• ফাস্টার অ্যাকাউন্ট ভেরিফিকেশন ও উইথড্রয়াল সিস্টেম\n• ক্রিটিক্যাল সিকিউরিটি প্যাচ ও বাগ ফিক্স",
+      "screenshots": [
+        "https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+      ],
+      "downloadMethod": "upload",
+      "apkFileUrl": "/api/download/ver_200",
+      "apkFileName": "fleearn-v2.0.0-release.apk",
+      "apkFileSize": "24.8 MB",
+      "externalDownloadUrl": "",
+      "isPublic": true,
+      "isLatest": true,
+      "isMandatory": false,
+      "actualDownloads": 1420,
+      "logoUrl": "",
+      "createdAt": "2026-09-28T10:00:00.000Z",
+      "updatedAt": "2026-09-28T10:00:00.000Z"
+    },
+    {
+      "id": "ver_190",
+      "appName": "Fleearn",
+      "versionNumber": "1.9.0",
+      "description": "পূর্ববর্তী স্ট্যাবল ভার্সন ১.৯.০। কোর সিস্টেম স্ট্যাবিলিটি ও পারফরম্যান্স অপটিমাইজেশন।",
+      "releaseDate": "2026-08-15",
+      "minAndroidVersion": "Android 7.0 বা পরবর্তী",
+      "whatsNew": "• রেফারেল আর্নিং ব্যালেন্স ভিউ অপটিমাইজেশন\n• নেটওয়ার্ক কানেক্টিভিটি রেজিলিয়েন্স\n• মেমরি লিকেজ সমাধান",
+      "screenshots": [
+        "https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+      ],
+      "downloadMethod": "upload",
+      "apkFileUrl": "/api/download/ver_190",
+      "apkFileName": "fleearn-v1.9.0-legacy.apk",
+      "apkFileSize": "22.1 MB",
+      "externalDownloadUrl": "",
+      "isPublic": true,
+      "isLatest": false,
+      "isMandatory": false,
+      "actualDownloads": 5890,
+      "logoUrl": "",
+      "createdAt": "2026-08-15T09:00:00.000Z",
+      "updatedAt": "2026-08-15T09:00:00.000Z"
+    }
+  ],
+  "notices": [
+    {
+      "id": "not_01",
+      "title": "ফ্লিআর্ন অ্যাপ ভার্সন ২.০.০ অফিসিয়াল রিলিজ ও সিকিউরিটি আপডেট",
+      "description": "আমরা আনন্দের সাথে জানাচ্ছি যে Fleearn-এর সম্পূর্ণ নতুন সংস্করণ ২.০.০ সফলভাবে গুগল সার্ভার ও অফিসিয়াল পোর্টাল থেকে ডাউনলোডযোগ্য করা হয়েছে। ব্যবহারকারীদের নিরবচ্ছিন্ন সেবার জন্য নতুন সংস্করণ ইন্সটল করতে অনুরোধ করা হচ্ছে। নতুন ভার্সনে দ্রুত পেমেন্ট প্রসেসিং এবং সিকিউর ওয়ালেট ফিচার সংযুক্ত রয়েছে।",
+      "mediaType": "image",
+      "mediaUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
+      "mediaFileName": "fleearn-v2-announcement.jpg",
+      "publishDate": "2026-10-01",
+      "isImportant": true,
+      "isVisible": true,
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-01T08:00:00.000Z"
+    },
+    {
+      "id": "not_02",
+      "title": "গ্রাহক সেবা ও তাৎক্ষণিক সাপোর্ট সিস্টেম সম্পর্কিত জরুরি নির্দেশনা",
+      "description": "ফ্লিআর্ন অ্যাপে কোনো টেকনিক্যাল সমস্যা দেখা দিলে আমাদের ইন্টিগ্রেটেড সাপোর্ট স্ক্রিনের মাধ্যমে সরাসরি টিকেট তৈরি করতে পারবেন। এছাড়া যেকোনো অভিযোগ বা পরামর্শের জন্য আমাদের অফিসিয়াল টেলিগ্রাম এবং হেল্পডেস্ক সক্রিয় রয়েছে। অনুগ্রহ করে অফিসিয়াল চ্যানেল ব্যতীত কোনো থার্ড-পার্টি এজেন্টের সাথে লেনদেন করবেন না।",
+      "mediaType": "pdf",
+      "mediaUrl": "",
+      "mediaFileName": "fleearn_user_guideline_2026.pdf",
+      "publishDate": "2026-09-20",
+      "isImportant": false,
+      "isVisible": true,
+      "createdAt": "2026-09-20T10:30:00.000Z",
+      "updatedAt": "2026-09-20T10:30:00.000Z"
+    },
+    {
+      "id": "not_03",
+      "title": "সার্ভার ও ডেটাবেজ অবকাঠামো আপগ্রেড সফলভাবে সম্পন্ন",
+      "description": "ফ্লিআর্ন বাংলাদেশ লিমিটেড-এর ক্লাউড ক্লাস্টার সফলভাবে পরবর্তী প্রজন্মের হাই-থ্রুপুট সার্ভারে মাইগ্রেশন সম্পন্ন করেছে। এর ফলে ব্যবহারকারীরা আরো দ্রুত রেসপন্স ও ট্রানজেকশন দেখতে পাবেন।",
+      "mediaType": "none",
+      "mediaUrl": "",
+      "publishDate": "2026-09-10",
+      "isImportant": false,
+      "isVisible": true,
+      "createdAt": "2026-09-10T12:00:00.000Z",
+      "updatedAt": "2026-09-10T12:00:00.000Z"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq_01",
+      "question": "ফ্লিআর্ন অ্যাপটি কীভাবে ডাউনলোড ও ইন্সটল করব?",
+      "answer": "আমাদের অফিসিয়াল ওয়েবসাইটের \"অ্যাপ ডাউনলোড\" সেকশন থেকে সরাসরি ভেরিফাইড APK ডাউনলোড করতে পারেন। ডাউনলোড শেষে ফাইলে ক্লিক করে \"Install\" চাপুন। আপনার ডিভাইসে \"Install from Unknown Sources\" অনুমতি প্রয়োজন হলে তা অন করুন।",
+      "category": "ইন্সটলেশন",
+      "order": 1,
+      "isPublished": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "faq_02",
+      "question": "ফ্লিআর্ন অ্যাপ ব্যবহারের জন্য ন্যূনতম সিস্টেম রিকোয়ারমেন্ট কী?",
+      "answer": "ফ্লিআর্ন অ্যাপটি Android 7.0 বা তদূর্ধ্ব ভার্সনে সুষ্ঠুভাবে কাজ করে। মসৃণ অভিজ্ঞতার জন্য অন্তত 2GB RAM এবং স্থিতিশীল ইন্টারনেট সংযোগ প্রস্তাবিত।",
+      "category": "ডিভাইস",
+      "order": 2,
+      "isPublished": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "faq_03",
+      "question": "রেফারেল প্রোগ্রাম কীভাবে কাজ করে?",
+      "answer": "প্রতিটি নিবন্ধিত ব্যবহারকারী একটি স্বতন্ত্র রেফারেল কোড পান। আপনার বন্ধু বা পরিচিত কেউ আপনার কোড ব্যবহার করে অ্যাকাউন্ট খুললে উভয়েই প্ল্যাটফর্মের নীতিমালা অনুযায়ী বেনিফিট লাভ করবেন।",
+      "category": "রেফারেল",
+      "order": 3,
+      "isPublished": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "faq_04",
+      "question": "উইথড্রয়াল প্রসেসিং হতে কত সময় লাগে?",
+      "answer": "স্বয়ংক্রিয় গেটওয়ের মাধ্যমে অধিকাংশ উইথড্রয়াল রিকোয়েস্ট কয়েক মিনিট থেকে সর্বাধিক ২৪ ঘণ্টার মধ্যে অনুমোদিত ব্যাংক বা মোবাইল অ্যাকাউন্টে পৌঁছে যায়।",
+      "category": "উইথড্রয়াল",
+      "order": 4,
+      "isPublished": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "faq_05",
+      "question": "আমার অ্যাকাউন্টের নিরাপত্তা কীভাবে নিশ্চিত করা হয়?",
+      "answer": "আমরা অত্যাধুনিক এন্ড-টু-এন্ড এনক্রিপশন, টু-ফ্যাক্টর অথেনটিকেশন ও ফায়ারওয়াল অবকাঠামো ব্যবহার করি। আপনার ব্যক্তিগত তথ্য সর্বোচ্চ সুরক্ষায় সংরক্ষিত থাকে।",
+      "category": "নিরাপত্তা",
+      "order": 5,
+      "isPublished": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    }
+  ],
+  "features": [
+    {
+      "id": "feat_01",
+      "title": "Earn (আর্ন)",
+      "description": "সহজ ও স্বচ্ছ ডিজিটাল পদ্ধতির মাধ্যমে ফ্লিআর্ন প্ল্যাটফর্মে যুক্ত হয়ে লাভজনক সুযোগ গ্রহণ করুন।",
+      "iconName": "Coins",
+      "order": 1,
+      "isVisible": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "feat_02",
+      "title": "Referral (রেফারেল)",
+      "description": "বন্ধু ও সহকর্মীদের সাথে আপনার ব্যক্তিগত কোড শেয়ার করে রেফারেল রিওয়ার্ড বৃদ্ধি করুন।",
+      "iconName": "Users",
+      "order": 2,
+      "isVisible": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "feat_03",
+      "title": "Secure Account (সুরক্ষিত অ্যাকাউন্ট)",
+      "description": "অ্যাডভান্সড এনক্রিপশন এবং নিরাপদ সেশন ম্যানেজমেন্টের মাধ্যমে আপনার অ্যাকাউন্ট সর্বদা সুরক্ষিত।",
+      "iconName": "ShieldCheck",
+      "order": 3,
+      "isVisible": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "feat_04",
+      "title": "Fast Withdrawal (দ্রুত উইথড্রয়াল)",
+      "description": "আপনার অর্জিত ব্যালেন্স দ্রুত ও নির্ভরযোগ্য চ্যানেলে সরাসরি পাওয়ার নিরাপদ ব্যবস্থা।",
+      "iconName": "Zap",
+      "order": 4,
+      "isVisible": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "feat_05",
+      "title": "User Friendly (ব্যবহারকারী বান্ধব)",
+      "description": "সহজ, পরিচ্ছন্ন এবং সাবলীল ইন্টারফেস যা যেকোনো সাধারণ ব্যবহারকারীর জন্য সহজে ব্যবহারযোগ্য।",
+      "iconName": "Smartphone",
+      "order": 5,
+      "isVisible": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "feat_06",
+      "title": "Notifications / Updates (তাৎক্ষণিক নোটিফিকেশন)",
+      "description": "জরুরি বিজ্ঞপ্তি, রিলিজ আপডেট ও নোটিশ সঙ্গে সঙ্গে আপনার ডিভাইসে প্রদর্শিত হয়।",
+      "iconName": "BellRing",
+      "order": 6,
+      "isVisible": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "feat_07",
+      "title": "Secure System (নিরাপদ সিস্টেম)",
+      "description": "আধুনিক ক্লাউড সিকিউরিটি আর্কিটেকচার যা ম্যালওয়্যার ও অননুমোদিত অ্যাক্সেস থেকে সুরক্ষিত রাখে।",
+      "iconName": "Lock",
+      "order": 7,
+      "isVisible": true,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    }
+  ],
+  "howItWorks": [
+    {
+      "id": "hiw_01",
+      "stepNumber": 1,
+      "title": "Register (নিবন্ধন)",
+      "description": "ফ্লিআর্ন অ্যাপটি ইন্সটল করে আপনার মৌলিক তথ্য দিয়ে সহজ এক মিনিটে একটি ফ্রি অ্যাকাউন্ট তৈরি করুন।",
+      "iconName": "UserCheck",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "hiw_02",
+      "stepNumber": 2,
+      "title": "Use Fleearn (অ্যাপ ব্যবহার)",
+      "description": "অ্যাপের ইন্টারফেসে প্রবেশ করে নির্দেশিত কার্যক্রম ও ফিচারগুলো সাবলীলভাবে অন্বেষণ করুন।",
+      "iconName": "Sparkles",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "hiw_03",
+      "stepNumber": 3,
+      "title": "Earn (আর্ন করুন)",
+      "description": "নিয়ম মেনে কার্যক্রম ও রেফারেল নেটওয়ার্কের মাধ্যমে স্বচ্ছভাবে আপনার অ্যাকাউন্টে জমা করুন।",
+      "iconName": "TrendingUp",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "hiw_04",
+      "stepNumber": 4,
+      "title": "Withdraw (উইথড্র করুন)",
+      "description": "নির্দিষ্ট ব্যালেন্সে পৌঁছালে আপনার পছন্দের মাধ্যমে নিরাপদে ও ঝামেলাহীনভাবে উইথড্রয়াল করুন।",
+      "iconName": "Wallet",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    }
+  ],
+  "announcementBanner": {
+    "id": "banner_01",
+    "text": "Fleearn App Version 2.0.0 is now available. নতুন ফিচার ও উন্নত সিকিউরিটি উপভোগ করতে আজই আপডেট করুন।",
+    "linkText": "ডাউনলোড করুন",
+    "linkUrl": "/download",
+    "priority": "high",
+    "isActive": true,
+    "updatedAt": "2026-10-01T10:00:00.000Z"
+  },
+  "serviceStatuses": [
+    {
+      "id": "srv_web",
+      "name": "Official Corporate Website",
+      "status": "operational",
+      "description": "ওয়েব পোর্টাল ও সিএমএস স্বাভাবিকভাবে চলছে",
+      "lastChecked": "2026-10-08T15:02:09.388Z"
+    },
+    {
+      "id": "srv_dl",
+      "name": "App Download & CDN Distribution",
+      "status": "operational",
+      "description": "উচ্চগতির ক্লাউড সার্ভার থেকে APK ফাইল ডাউনলোড সক্রিয়",
+      "lastChecked": "2026-10-08T15:02:09.388Z"
+    },
+    {
+      "id": "srv_sup",
+      "name": "Customer Support & Deep Links",
+      "status": "operational",
+      "description": "অ্যান্ড্রয়েড ডিপ লিংক ও হেল্পডেস্ক রাউটিং সক্রিয়",
+      "lastChecked": "2026-10-08T15:02:09.388Z"
+    },
+    {
+      "id": "srv_api",
+      "name": "App Version Check & API Gateway",
+      "status": "operational",
+      "description": "মোবাইল অ্যাপ সংস্করণ যাচাইকরণ সেবা চালু",
+      "lastChecked": "2026-10-08T15:02:09.388Z"
+    }
+  ],
+  "websiteContent": {
+    "home": {
+      "heroTitle": "স্মার্ট ভবিষ্যৎ, আত্মবিশ্বাসী পদক্ষেপ — ফ্লিআর্ন",
+      "heroSubtitle": "Fleearn Bangladesh Ltd-এর অফিশিয়াল ডিজিটাল প্ল্যাটফর্ম",
+      "heroDescription": "ফ্লিআর্ন হলো একটি আধুনিক ও নিরাপদ মোবাইল প্ল্যাটফর্ম যা দ্রুত কর্মদক্ষতা ও নির্ভরযোগ্য সেবা প্রদানের লক্ষ্যে তৈরি। ভেরিফাইড অফিশিয়াল অ্যাপ ডাউনলোড করে যুক্ত হোন ডিজিটাল সম্ভাবনার নতুন দিগন্তে।",
+      "downloadCtaText": "অফিসিয়াল অ্যাপ ডাউনলোড",
+      "secondaryCtaText": "ফিচারসমূহ দেখুন"
+    },
+    "about": {
+      "companyIntro": "ফ্লিআর্ন বাংলাদেশ লিমিটেড (Fleearn Bangladesh Ltd) হলো বাংলাদেশে নিবন্ধনের জন্য প্রক্রিয়াকৃত একটি উদীয়মান প্রযুক্তি প্রতিষ্ঠান। আমরা আধুনিক ডিজিটাল সেবা ও সহজে ব্যবহারযোগ্য অ্যাপ্লিকেশন উদ্ভাবনে প্রতিশ্রুতিবদ্ধ।",
+      "fleearnIntro": "ফ্লিআর্ন (Fleearn) অ্যাপটি ডিজাইন করা হয়েছে তরুণ ও প্রযুক্তিপ্রেমী ব্যবহারকারীদের জন্য, যাতে তারা নিরাপদ ডিজিটাল পরিবেশের ভেতর দিয়ে নির্বিঘ্ন সেবা লাভ করতে পারে।",
+      "mission": "প্রযুক্তির সর্বোচ্চ ব্যবহারের মাধ্যমে সাধারণ মানুষের কাছে বিশ্বস্ত, দ্রুত এবং মানসম্পন্ন ডিজিটাল সেবা পৌঁছে দেওয়া।",
+      "vision": "একটি টেকসই, স্বচ্ছ এবং আধুনিক প্রযুক্তিনির্ভর ডিজিটাল প্ল্যাটফর্ম হিসেবে জাতীয় ও আন্তর্জাতিক পরিমণ্ডলে সুনাম অর্জন করা।",
+      "objectives": [
+        "নিরাপদ ও নির্ভরযোগ্য সফটওয়্যার অবকাঠামো পরিচালনা করা।",
+        "ব্যবহারকারী বান্ধব মোবাইল ইন্টারফেস প্রদান করা।",
+        "নিয়মিত আপডেট ও সক্রিয় সাপোর্ট চ্যানেলের মাধ্যমে গ্রাহকের সন্তুষ্টি নিশ্চিত করা।",
+        "স্বচ্ছ নীতিমালা ও ডেটা সুরক্ষার নিয়মাবলী সর্বদা সমুন্নত রাখা।"
+      ],
+      "companyAddress": "ঢাকা, বাংলাদেশ (অফিসিয়াল কর্পোরেট ঠিকানা অ্যাডমিন প্যানেল থেকে কনফিগারযোগ্য)",
+      "legalPlaceholderNotice": "দ্রষ্টব্য: ফ্লিআর্ন বাংলাদেশ লিমিটেড কোনো মিথ্যা সরকারি অনুমোদন বা কাল্পনিক পরিসংখ্যান দাবি করে না। সকল প্রাতিষ্ঠানিক তথ্য স্বচ্ছতার সাথে এখানে উপস্থাপন করা হয়েছে।"
+    },
+    "contact": {
+      "email": "support@fleearn.com",
+      "phone": "+880 1700-000000",
+      "address": "গুলশান / মতিঝিল বাণিজ্যিক এলাকা, ঢাকা, বাংলাদেশ",
+      "workingHours": "শনিবার - বৃহস্পতিবার: সকাল ৯টা থেকে সন্ধ্যা ৬টা পর্যন্ত"
+    },
+    "footer": {
+      "description": "ফ্লিআর্ন বাংলাদেশ লিমিটেড কর্তৃক পরিচালিত অফিসিয়াল ওয়েব পোর্টাল। আধুনিক প্রযুক্তি, নির্ভরযোগ্য সেবা ও বিশ্বস্ত প্ল্যাটফর্ম।",
+      "copyrightText": "© 2026 Fleearn Bangladesh Ltd. সর্বস্বত্ব সংরক্ষিত।",
+      "address": "ঢাকা, বাংলাদেশ"
+    },
+    "legal": {
+      "privacyPolicy": "১. ভূমিকা: ফ্লিআর্ন বাংলাদেশ লিমিটেড (\"আমরা\", \"আমাদের\") আপনার গোপনীয়তাকে সর্বোচ্চ অগ্রাধিকার দেয়। এই গোপনীয়তা নীতিতে ব্যাখ্যা করা হয়েছে কীভাবে আমরা আপনার ডেটা সংগ্রহ ও সুরক্ষিত রাখি।\n\n২. ডেটা সংগ্রহ: আমরা কেবল অ্যাকাউন্টের সুরক্ষার জন্য প্রয়োজনীয় তথ্য এবং ডিভাইস সংস্করণ সংগ্রহ করি। আমরা কখনোই আপনার অনুমতি ছাড়া তৃতীয় পক্ষের কাছে কোনো সংবেদনশীল তথ্য হস্তান্তর করি না।\n\n৩. ডেটা সুরক্ষা: আমাদের সমস্ত ডাটাবেজ আধুনিক এনক্রিপশন প্রোটোকল দ্বারা সুরক্ষিত।\n\n৪. যোগাযোগ: গোপনীয়তা নীতি সম্পর্কিত যেকোনো প্রশ্নের জন্য support@fleearn.com-এ যোগাযোগ করুন।",
+      "termsAndConditions": "১. শর্তাবলীর গ্রহণযোগ্যতা: ফ্লিআর্ন অ্যাপ বা ওয়েবসাইট ব্যবহার করার মাধ্যমে আপনি এই ব্যবহারের শর্তাবলীর সাথে সম্মত হন।\n\n২. অ্যাকাউন্টের দায়িত্ব: ব্যবহারকারী তার অ্যাকাউন্টের পরিচয়পত্র ও পাসওয়ার্ড গোপন রাখার জন্য দায়ী। কোনো অননুমোদিত ব্যবহারের জন্য কোম্পানির সাথে অবিলম্বে যোগাযোগ করা আবশ্যক।\n\n৩. নিষিদ্ধ আচরণ: কোনো প্রকার অটোমেটেড বট, স্ক্র্যাপার বা অননুমোদিত রিভার্স-ইঞ্জিনিয়ারিং কঠোরভাবে নিষিদ্ধ।\n\n৪. অধিকার সংরক্ষণ: ফ্লিআর্ন বাংলাদেশ লিমিটেড যেকোনো সময় শর্তাবলী পরিমার্জনের অধিকার সংরক্ষণ করে।",
+      "cookiePolicy": "১. কুকিজ কী: কুকিজ হলো ছোট টেক্সট ফাইল যা আপনার ব্রাউজারে সংরক্ষিত হয় ওয়েবসাইটটিকে সুষ্ঠুভাবে পরিচালনা করতে।\n\n২. আমাদের ব্যবহার: আমরা ব্যবহারকারীর থিম পছন্দ (ডার্ক/লাইট), ভাষা নির্বাচন (বাংলা/ইংরেজি) এবং নিরাপদ সেশন বজায় রাখার জন্য স্থানীয় কুকিজ ও স্টোরেজ ব্যবহার করি।\n\n৩. কুকি নিয়ন্ত্রণ: আপনি আপনার ব্রাউজার সেটিংস থেকে যেকোনো সময় কুকি মুছতে বা ব্লক করতে পারেন।"
+    }
+  },
+  "socialLinks": {
+    "facebook": "https://facebook.com/fleearn.bd",
+    "telegram": "https://t.me/fleearn_official",
+    "whatsapp": "https://wa.me/8801700000000",
+    "instagram": "",
+    "youtube": "https://youtube.com/@fleearn_official",
+    "twitter": ""
+  },
+  "settings": {
+    "websiteName": "Fleearn Bangladesh Ltd",
+    "tagline": "Connecting Potential, Powering Growth",
+    "primaryDomain": "https://ais-dev-hjk7wec5py5oyzovnr3nv4-706788134650.asia-southeast1.run.app",
+    "defaultLanguage": "bn",
+    "maintenanceMode": false,
+    "maintenanceMessage": "ফ্লিআর্ন সিস্টেমে নিয়মিত রক্ষণাবেক্ষণের কাজ চলছে। সাময়িক অসুবিধার জন্য আমরা আন্তরিকভাবে দুঃখিত। অতি শীঘ্রই সেবা উন্মুক্ত করা হবে।",
+    "demoViewsEnabled": true,
+    "demoViewsCount": 45280,
+    "demoViewsRangeMin": 40000,
+    "demoViewsRangeMax": 60000,
+    "androidPackageName": "com.fleearn.app",
+    "androidSha256Fingerprint": "14:6D:E2:07:59:BF:76:A8:1F:B4:74:B9:B8:35:E1:94:07:9B:DE:6B:43:86:16:D4:53:7A:B3:26:74:0F:7F:01",
+    "supportDeepLinkDestination": "fleearn://support"
+  },
+  "activityLogs": [
+    {
+      "id": "log_1791471736680_2oo24",
+      "adminUid": "FL-ADM-101",
+      "adminEmail": "admin1@fleearn.com",
+      "action": "Admin Login",
+      "resource": "Authentication",
+      "details": "Administrator Chief Systems Administrator logged into the Admin Panel.",
+      "timestamp": "2026-10-08T15:02:16.680Z"
+    },
+    {
+      "id": "log_01",
+      "adminUid": "FL-ADM-101",
+      "adminEmail": "admin1@fleearn.com",
+      "action": "System Initialized",
+      "resource": "Core Engine",
+      "details": "Initial corporate database, release 2.0.0 and security rules seeded successfully.",
+      "timestamp": "2026-10-08T15:02:09.388Z"
+    }
+  ]
+}

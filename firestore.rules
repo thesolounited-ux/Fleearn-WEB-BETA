@@ -1,0 +1,115 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global Safety Net (Default-Deny Catch-All)
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Security & Identity Helpers
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwnerEmail() {
+      return isSignedIn() && request.auth.token.email == "thesolounited@gmail.com";
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        isOwnerEmail() ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    // Validation: App Version
+    function isValidAppVersion(data) {
+      return data.appName is string && data.appName.size() <= 100 &&
+             data.versionNumber is string && data.versionNumber.size() <= 30 &&
+             data.isPublic is bool &&
+             data.isLatest is bool &&
+             data.isMandatory is bool &&
+             data.screenshots is list &&
+             data.screenshots.size() >= 2 &&
+             data.screenshots.size() <= 7 &&
+             data.downloadMethod in ['upload', 'external'];
+    }
+
+    // Validation: Notice
+    function isValidNotice(data) {
+      return data.title is string && data.title.size() <= 300 &&
+             data.description is string && data.description.size() <= 10000 &&
+             data.isImportant is bool &&
+             data.isVisible is bool;
+    }
+
+    // Admins Collection
+    match /admins/{adminId} {
+      allow get: if isValidId(adminId) && (isAdmin() || (isSignedIn() && request.auth.uid == adminId));
+      allow list: if isAdmin();
+      allow create, update, delete: if isValidId(adminId) && isAdmin();
+    }
+
+    // App Versions Collection
+    match /appVersions/{versionId} {
+      allow get: if isValidId(versionId) && (resource.data.isPublic == true || isAdmin());
+      allow list: if resource.data.isPublic == true || isAdmin();
+      allow create: if isValidId(versionId) && isAdmin() && isValidAppVersion(request.resource.data);
+      allow update: if isValidId(versionId) && isAdmin() && isValidAppVersion(request.resource.data);
+      allow delete: if isValidId(versionId) && isAdmin();
+    }
+
+    // Notices Collection
+    match /notices/{noticeId} {
+      allow get: if isValidId(noticeId) && (resource.data.isVisible == true || isAdmin());
+      allow list: if resource.data.isVisible == true || isAdmin();
+      allow create: if isValidId(noticeId) && isAdmin() && isValidNotice(request.resource.data);
+      allow update: if isValidId(noticeId) && isAdmin() && isValidNotice(request.resource.data);
+      allow delete: if isValidId(noticeId) && isAdmin();
+    }
+
+    // FAQs Collection
+    match /faqs/{faqId} {
+      allow get: if isValidId(faqId) && (resource.data.isPublished == true || isAdmin());
+      allow list: if resource.data.isPublished == true || isAdmin();
+      allow create, update, delete: if isValidId(faqId) && isAdmin();
+    }
+
+    // Features Collection
+    match /features/{featureId} {
+      allow get: if isValidId(featureId) && (resource.data.isVisible == true || isAdmin());
+      allow list: if resource.data.isVisible == true || isAdmin();
+      allow create, update, delete: if isValidId(featureId) && isAdmin();
+    }
+
+    // How It Works Steps
+    match /howItWorks/{stepId} {
+      allow get, list: if isValidId(stepId);
+      allow create, update, delete: if isValidId(stepId) && isAdmin();
+    }
+
+    // Website Settings & Banner
+    match /settings/{settingId} {
+      allow get, list: if isValidId(settingId);
+      allow create, update, delete: if isValidId(settingId) && isAdmin();
+    }
+
+    // Service Statuses
+    match /serviceStatuses/{statusId} {
+      allow get, list: if isValidId(statusId);
+      allow create, update, delete: if isValidId(statusId) && isAdmin();
+    }
+
+    // Administrative Activity Logs (Immutable Audit Trail)
+    match /activityLogs/{logId} {
+      allow get, list: if isValidId(logId) && isAdmin();
+      allow create: if isValidId(logId) && isAdmin();
+      allow update, delete: if false;
+    }
+  }
+}
